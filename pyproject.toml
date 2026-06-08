@@ -8,6 +8,11 @@ requires-python = ">=3.11"
 authors = [
     { name = "Altissimo HQ" },
 ]
+dependencies = [
+    "boldsign>=1.0.4",
+    "pydantic>=2.0",
+    "email-validator",
+]
 
 [build-system]
 requires = ["poetry-core>=2.0"]
@@ -62,3 +67,7 @@ warn_unused_configs = true
 namespace_packages = true
 explicit_package_bases = true
 mypy_path = "src"
+
+[[tool.mypy.overrides]]
+module = "boldsign.*"
+ignore_missing_imports = true
