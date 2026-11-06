@@ -1,7 +1,7 @@
 [project]
 name = "boldsign-python"
 version = "0.1.0"
-description = "Altissimo Python client for boldsign-python"
+description = "Altissimo client for sending, tracking, and collecting e-signatures on documents via the BoldSign API"
 readme = "README.md"
 license = "Apache-2.0"
 requires-python = ">=3.11"
